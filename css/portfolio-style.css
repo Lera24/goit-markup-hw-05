@@ -36,6 +36,7 @@
         background-color var(--time) var(--function),
         border-radius var(--time) var(--function),
         box-shadow var(--time) var(--function);
+    outline: none;
 }
 
 /*результаты работ*/
@@ -60,6 +61,7 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     transition: box-shadow var(--time) var(--function);
+    outline: none;
 }
 
 .examples-list:hover .examples-opasity,
@@ -68,6 +70,7 @@
     opacity: 1;
     transition: transform var(--time) var(--function),
         opacity var(--time) var(--function);
+    outline: none;
 }
 
 .examples-text {

@@ -49,47 +49,50 @@
 
 /*разметка бекдропа*/
 .backdrop {
-	position: fixed;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	background-color: var(--color-backdrop);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--color-backdrop);
 
-	transition: background-color var(--time) var(--function);
+    transition: background-color var(--time) var(--function);
 }
 
 .backdrop.is-hidden {
-	opacity: 0;
-	pointer-events: none;
-	visibility: hidden;
-	transition: background-color var(--time) var(--function), opacity var(--time) var(--function);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: background-color var(--time) var(--function),
+        opacity var(--time) var(--function);
 }
 
 .backdrop-modal {
-	position: absolute;
-	width: 528px;
-	height: 581px;
-	background-color: var(--white-color);
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    background-color: var(--white-color);
 }
 
 .backdrop-buttom {
-	position: absolute;
-	transform: translate(490px, 8px);
+    position: absolute;
+    transform: translate(490px, 8px);
+    height: 30px;
+    width: 30px;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid var(--backdrop-buttom);
-	background-color: var(--white-color);
-	border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--backdrop-buttom);
+    background-color: var(--white-color);
+    border-radius: 50%;
 }
 
 .backdrop-svg {
-	color: var(--black-color);
+    color: var(--black-color);
 }
 
 /*разметка особенностей*/
@@ -265,4 +268,5 @@
     transition: color var(--time) var(--function),
         fill var(--time) var(--function),
         border-color var(--time) var(--function);
+    outline: none;
 }
